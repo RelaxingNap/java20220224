@@ -1,4 +1,4 @@
-package chap03.lecture.binary;
+package chap03.book.example;
 
 public class ArithmeticOperatorExample {
 	public static void main(String[] args) {
