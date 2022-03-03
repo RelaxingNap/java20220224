@@ -10,6 +10,11 @@ public class Exercise061 {
 			System.out.println();
 		}
 		System.out.println();
+//		*
+//		**
+//		***
+//		****
+//		*****
 		
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < (5 - i); j++) {
@@ -18,7 +23,12 @@ public class Exercise061 {
 			System.out.println();
 		}
 		System.out.println();
-		
+//		*****
+//		****
+//		***
+//		**
+//		*
+
 		for (int i = 0; i < 5; i++) {
 			for(int k = 0; k < i; k++) {
 				System.out.print(" ");
@@ -30,7 +40,11 @@ public class Exercise061 {
 			System.out.println();
 		}
 		System.out.println();
-		
+//		*****
+//		 ****
+//		  ***
+//		   **
+//		    *	
 		
 		for (int i = 0; i < 5; i++) {
 			for (int k = 0; k < (4 - i); k++) {
@@ -42,6 +56,12 @@ public class Exercise061 {
 			}
 			System.out.println();
 		}
+		
+//		    *
+//		   **
+//		  ***
+//		 ****
+//		*****
 		
 		// *찍기에서 빈칸도 찍어낼 수 있다는것을 염두해 둘 것
 	}
