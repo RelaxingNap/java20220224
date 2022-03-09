@@ -30,10 +30,11 @@ public class Solution12935 {
 	               j++;
 	            }
 	        }
-	    } else {
-	        int[] answer = new int[arr.length];
-	        answer[j] = -1;
-	    }
+	    } 
+	        
+	    int[] answer = new int[arr.length];
+	    answer[j] = -1;
+	    
 	    
 	    return answer;
 	}
