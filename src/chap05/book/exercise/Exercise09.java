@@ -22,21 +22,21 @@ public class Exercise09 {
 				System.out.print("학생수 > ");
 				studentNum = scanner.nextInt();
 				scores = new int[studentNum];
-				continue;
+				
 			} else if(selectNo == 2) {
 				for (int i = 0; i < scores.length; i++) {
 					System.out.print("scores[" + i + "] : ");
 					scores[i] = scanner.nextInt();
 				}
-				continue;
+				
 			} else if(selectNo == 3) {
 				for (int i = 0; i < scores.length; i++) {
 					System.out.println("scores[" + i + "] : " + scores[i]);
 				}
-				continue;
+				
 			} else if(selectNo == 4) {
 				int max = 0;
-				int sum = 0;
+				double sum = 0;
 				double avg = 0;
 				for (int score : scores) {
 					if(max < score) {
@@ -44,11 +44,11 @@ public class Exercise09 {
 					}
 					sum += score;
 				}	
-				avg = sum / (double) scores.length;
+				avg = sum / scores.length;
 				
 				System.out.println("최고 점수 : " + max);
 				System.out.println("평균 점수 : " + avg);
-				continue;
+				
 				
 			} else if(selectNo == 5) {
 				run = false;
@@ -56,6 +56,9 @@ public class Exercise09 {
 		}
 		
 		System.out.println("프로그램 종료");
+		scanner.close();
+		//1. scanner.close() 누락
+		//2. 각 if문 마지막에 쓸데없이 continue; 삽입
 				
 	}
 }

@@ -20,6 +20,7 @@ public class Exercise08 {
 //		}
 	
 		for (int[] is : array) {
+//			cnt += is.length;
 			for (int is2 : is) {
 				sum += is2;
 				cnt++;
