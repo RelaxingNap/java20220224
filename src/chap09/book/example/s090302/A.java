@@ -10,7 +10,7 @@ public class A {
 	
 	class B {
 		void method() {
-			field1 = 10;
+			field1 = 10;	// 내부클래스에서 외부 멤버에 접근가능
 			method1();
 			
 			field2 = 10;
@@ -20,7 +20,7 @@ public class A {
 	
 	static class C {
 		void method() {
-//			field1 = 10;
+//			field1 = 10;	// 내부클래스라도 인스턴스 멤버면 접근불가
 //			method1();
 			
 			field2 = 10;
