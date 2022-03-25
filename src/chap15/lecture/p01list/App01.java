@@ -38,7 +38,7 @@ public class App01 {
 		
 		ArrayList<String> list2 = new ArrayList<>();
 		
-		list2.addAll(list1);
+		//list2.addAll(list1);
 		
 		for (String string : list2) {
 			System.out.println(string);
