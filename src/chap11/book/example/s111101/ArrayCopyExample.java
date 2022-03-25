@@ -21,5 +21,11 @@ public class ArrayCopyExample {
 			System.out.println("arr4[" + i + "] = " + arr4[i]);
 		}
 		
+		// 방법 4
+		char[] arr5 = arr1.clone();
+		for (int i = 0; i < arr5.length; i++) {
+			System.out.println("arr5[" + i + "] = " + arr5[i]);
+		}
+		
 	}
 }
