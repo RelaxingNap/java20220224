@@ -11,12 +11,13 @@ public class C14ArrayCopy {
 		b[0][0] = 99;
 		System.out.println(a[0][0]);
 		
+		//깊은복사
 		int[][] c = new int[a.length][];
 		for (int i = 0; i < a.length; i++) {
 			c[i] = Arrays.copyOf(a[i], a[i].length);
 		}
 		
-		//깊은복사
+		// 깊은 복사로 인해 c[0][0]값에 변화를 주어도 a[0][0]은 변화 없음
 		c[0][0] = 999;
 		System.out.println(a[0][0]);
 	}
