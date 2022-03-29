@@ -14,5 +14,10 @@ public class ArrayAsListExample {
 		for (int value : list2) {	// auto unboxing
 			System.out.println(value);
 		}
+		
+//		책 못한거
+//		591~596
+//		14장
+//		722~739
 	}
 }
