@@ -1,7 +1,9 @@
 package chap99.leetcode;
 
+import java.util.*;
+
 public class Solution771 {
-	public int numJewelsInStones(String jewels, String stones) {
+	public int numJewelsInStones1(String jewels, String stones) {
 		int result = 0;
 
 		if (jewels.length() >= 1 && stones.length() <= 50) {
@@ -16,4 +18,23 @@ public class Solution771 {
 
 		return result;
 	}
+	
+	 public int numJewelsInStones2(String jewels, String stones) {
+	        int result = 0;
+	        
+	        Set<Character> set = new HashSet<>();
+	        
+	        for(char c : jewels.toCharArray()){
+	            set.add(c);
+	        }
+	        
+	        for(char c : stones.toCharArray()){
+	            if(set.contains(c)){
+	                result++;
+	            }
+	        }
+	        
+	        return result;
+	    }
+	
 }
